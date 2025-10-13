@@ -1,108 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Corner j</title>
-  <link rel="icon" type="image/png" href="/favicon.png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jaielaure.com</title>
+<link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="icon" type="image/png" href="https://data.jaielaure.com/favicon.png"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      text-align: center;
 
-      background-image: url('https://data.jaielaure.com/bgp.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+<style>
+  body {
+    margin: 0;
+    background-color: #0b0b0b;
+    color: #bfbfbf;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+  }
 
-    .main-container {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      max-width: 700px;
-      padding: 0 20px;
-      box-sizing: border-box;
-      z-index: 1;
-    }
+  .orange {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 80px;
+    image-rendering: pixelated;
+  }
 
-    .section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 6px 16px;
-      box-sizing: border-box;
-      z-index: 1;
-    }
+  .smiley {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    width: 100px;
+    image-rendering: pixelated;
+  }
 
-    .text {
-      font-weight: 500; /* medium */
-      font-size: 1rem;
-      flex: 1;
-      text-align: left;
-    }
+  h1 {
+    margin-top: 90px;
+    color: #dcdcdc;
+    font-size: 42px;
+    font-weight: normal;
+  }
 
-    .button {
-      padding: 6px 1px;
-      border: none;
-      border-radius: 999px;
-      background-color: #000;
-      color: #E7E7E7;
-      font-weight: 700; /* bold */
-      font-size: 0.9rem;
-      cursor: pointer;
-      text-decoration: none;
-      text-align: center;
-      flex-shrink: 0;
-      width: 110px;
-    }
+  h1 a {
+    color: #dcdcdc;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-underline-offset: 2px;
+  }
 
-    .footer {
-      text-align: center;
-      padding: 16px;
-      font-size: 0.8rem;
-      color: #777;
-      width: 100%;
-      max-width: 700px;
-      box-sizing: border-box;
-      z-index: 1;
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 120px;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 20px;
+  }
+
+  .links a {
+    color: #bfbfbf;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  @media (max-width: 800px) {
+    .links {
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      font-size: 20px;
     }
-  </style>
+    h1 {
+      font-size: 32px;
+      margin-top: 60px;
+    }
+    .orange {
+      width: 60px;
+      top: 25px;
+      left: 25px;
+    }
+    .smiley {
+      width: 80px;
+      bottom: 25px;
+      right: 25px;
+    }
+  }
+</style>
 </head>
 <body>
-  <div class="main-container">
-    <div class="section">
-      <div class="text">duae</div>
-      <a class="button" href="https://link.jaielaure.com/duae">get it now</a>
-    </div>
 
-    <div class="section">
-      <div class="text">cop some goods</div>
-      <a class="button" href="https://shop.jaielaure.com">shop now</a>
-    </div>
+<img src="https://data.jaielaure.com/Orange.png" class="orange" alt="orange">
+<h1><a href="#">jaiélaure.com</a></h1>
 
-    <div class="section">
-      <div class="text">my other music</div>
-      <a class="button" href="https://jaielaure.com/music">listen here</a>
-    </div>
+<div class="links">
+  <a href="#">music</a>
+  <a href="#">shop</a>
+  <a href="#">live</a>
+  <a href="#">bio</a>
+  <a href="#">monthly</a>
+  <a href="#">sns</a>
+</div>
 
-    <div class="section">
-      <div class="text">learn about me</div>
-      <a class="button" href="https://jaielaure.com/about">click here</a>
-    </div>
-  </div>
+<img src="https://data.jaielaure.com/jai%20smiley.png" class="smiley" alt="smiley">
 
-  <div class="footer">&copy; 2025 Est@11, LLC</div>
 </body>
 </html>
