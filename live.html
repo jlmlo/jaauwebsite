@@ -46,56 +46,49 @@
     text-underline-offset: 2px;
   }
 
-  .text-block {
-    position: absolute;
-    top: 150px;
-    left: 50px;
-    max-width: 400px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: #bfbfbf;
+  .seated-wrap{
+    max-width: 900px;
+    margin: 40px auto 80px;
+    padding: 0 16px;
+  }
+
+  .seated-card{
+    background: #0;
+    border-radius: 8px;
+    padding: 18px;
     text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+
+  #seated-55fdf2c0{
+    font-family: Times New Roman;
   }
 
   @media (max-width: 800px) {
-    .text-block {
-      top: 120px;
-      left: 25px;
-      max-width: 300px;
-      font-size: 13px;
-    }
-    h1 {
-      font-size: 32px;
-      margin-top: 60px;
-    }
-    .orange {
-      width: 60px;
-      top: 25px;
-      left: 25px;
-    }
-    .smiley {
-      width: 80px;
-      bottom: 25px;
-      right: 25px;
-    }
+    h1 { font-size: 32px; margin-top: 60px; }
+    .orange { width: 60px; top: 25px; left: 25px; }
+    .smiley { width: 80px; bottom: 25px; right: 25px; }
+    .seated-wrap{ margin-top: 24px; }
   }
 </style>
 </head>
+
 <body>
+  <img src="https://data.jaielaure.com/Orange.png" class="orange" alt="orange">
+  <h1><a href="https://jaielaure.com">jaiélaure.com</a></h1>
 
-<img src="https://data.jaielaure.com/Orange.png" class="orange" alt="orange">
-<h1><a href="https://jaielaure.com">jaiélaure.com</a></h1>
-
-  <div class="w-full max-w-4xl mx-auto mb-20">
+  <div class="seated-wrap">
+    <div class="seated-card">
       <div
         id="seated-55fdf2c0"
         data-artist-id="3f7b14a8-5059-42e1-a5f1-3006c01c2acf"
         data-css-version="3"
       ></div>
-      <script src="https://widget.seated.com/app.js"></script>
     </div>
-    
-<img src="https://data.jaielaure.com/jai%20smiley.png" class="smiley" alt="smiley">
+  </div>
 
+  <img src="https://data.jaielaure.com/jai%20smiley.png" class="smiley" alt="smiley">
+
+  <script src="https://widget.seated.com/app.js" defer></script>
 </body>
 </html>
